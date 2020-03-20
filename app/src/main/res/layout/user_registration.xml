@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,37 +17,49 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <EditText
-            android:id="@+id/emailTxt"
+            android:id="@+id/emailReg"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:ems="10"
             android:inputType="textEmailAddress"
-            android:hint="Email"
-            android:autofillHints=""
-            tools:ignore="TextFields, UnusedAttribute" />
+            android:hint="Email" />
 
         <EditText
-            android:id="@+id/passTxt"
+            android:id="@+id/passReg"
             android:layout_width="300dp"
+            android:ems="10"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:inputType="textPassword"
-            android:hint="Password"
-            android:importantForAutofill="no" />
-
-        <Button
-            android:id="@+id/loginBtn"
+            android:hint="Password" />
+        <EditText
+            android:id="@+id/confPassReg"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="login" />
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirmed Password" />
+
+        <Button
+            android:id="@+id/buttonReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Daftar" />
 
         <TextView
-            android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="not a member ? sign up now" />
+            android:text="Sudah Registrasi ?" />
+
+
+        <TextView
+            android:id="@+id/backLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
